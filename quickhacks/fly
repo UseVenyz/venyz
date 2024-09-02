@@ -1,3 +1,6 @@
+local speaker = game:GetService("Players").LocalPlayer
+local chr = game.Players.LocalPlayer.Character
+local hum = chr and chr:FindFirstChildWhichIsA("Humanoid")
 speeds = 2
 nowe = true
 for i = 1, speeds do
