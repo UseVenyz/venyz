@@ -1,8 +1,0 @@
-local player = game.Players.LocalPlayer
-local character = player.Character or player.CharacterAdded:Wait()
-local newProperties = PhysicalProperties.new(30, 0.3, 0.5)
-for _, part in ipairs(character:GetDescendants()) do
-  if part:IsA("BasePart") then
-    part.CustomPhysicalProperties = newProperties
-  end
-end
